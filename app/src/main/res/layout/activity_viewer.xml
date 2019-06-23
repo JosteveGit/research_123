@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Viewer"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+       android:orientation="vertical"
+       android:background="@drawable/search_layout"
+       >
+
+       <TextView
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="8dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Viewer"
+           android:textSize="50sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           />
+
+       <LinearLayout
+           android:layout_marginBottom="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center_vertical">
+
+           <ImageView
+               android:id="@+id/back"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+           <LinearLayout
+               android:background="@drawable/search_layout"
+               android:layout_marginEnd="2dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="6dp">
+
+               <TextView
+                   android:id="@+id/pdf"
+                   android:singleLine="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Content-Based Recommendation Systems"
+                   android:textSize="18sp"
+                   android:textColor="@color/black"
+                   />
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/viewpdf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+/>
+
+</LinearLayout>
